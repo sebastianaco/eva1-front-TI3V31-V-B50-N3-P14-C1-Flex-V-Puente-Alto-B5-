@@ -1,0 +1,95 @@
+/* css/estilos.css */
+
+/* 1. Importación de Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* 2. Definición de variables de color (Colores Corporativos) */
+:root {
+    --color-primario: #0a2540;
+    --color-secundario: #4299e1;
+    --color-acento: #f7fafc;
+    --color-texto: #333333;
+}
+
+/* 3. Estilos generales y aplicación de la fuente */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-texto);
+}
+
+/* 4. Estilos para componentes de Bootstrap (Personalización) */
+
+/* Barra de Navegación (NavBar) */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Ajusta el tamaño de tu logo */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-primario);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--color-secundario);
+}
+
+/* Carrusel */
+.carousel-caption {
+    background-color: rgba(10, 37, 64, 0.7); /* Fondo semitransparente con el color primario */
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+/* Secciones */
+.section-title {
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+.bg-light-custom {
+    background-color: var(--color-acento);
+}
+
+/* Tarjetas de Servicios */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-secundario);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+}
